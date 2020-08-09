@@ -1,12 +1,23 @@
 <template>
   <div id="app">
-    <router-view/>
+    <v-app>
+      <page-header/>
+      <v-main>
+        <v-container fluid>
+          <router-view/>
+        </v-container>
+      </v-main>
+    </v-app>
   </div>
 </template>
 
 <script>
+import PageHeader from '@/components/Header.vue'
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    PageHeader
+  }
 }
 </script>
 
