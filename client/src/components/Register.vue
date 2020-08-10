@@ -11,7 +11,9 @@
             label="Email"/>
           <v-text-field
           v-model="password"
-          label="Password"/>
+          label="Password"
+          type="password"
+          autocomplete="new-password"/>
           <div class = "error" v-html="error"/>
           <v-btn class="cyan"
             dark
