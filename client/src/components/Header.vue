@@ -11,14 +11,16 @@
         </v-toolbar-items> -->
         <v-spacer></v-spacer>
         <v-toolbar-items>
-            <v-btn flat dark depressed class="cyan">
+            <v-btn v-if="!$store.state.isUserLoggedIn"
+            flat dark depressed class="cyan">
                 <router-link to="login">
                     Login
                 </router-link>
             </v-btn>
         </v-toolbar-items>
         <v-toolbar-items>
-            <v-btn flat dark depressed class="cyan">
+            <v-btn v-if="!$store.state.isUserLoggedIn" 
+            flat dark depressed class="cyan">
                 <router-link to="register">
                     Sign Up
                 </router-link>
